@@ -5,6 +5,7 @@
   --basic-font: "Arial", sans-serif;
   --dark-color: #242426;
   --light-color: #eaeaea;
+  --grey-color: #cccccc;
   --orange-color: #ffaf68;
   --green-color: #a3ffa3;
   --blue-color: #6ac8ff;
@@ -29,13 +30,15 @@ html {
 body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  place-items: center;
+  grid-template-rows: repeat(2, min-content);
+  place-content: center;
+  justify-items: center;
   min-height: 100%;
+  padding: 20px 0;
   font: 500 16px/24px var(--basic-font);
   color: var(--dark-color);
   background-color: var(--light-color);
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 img {
@@ -70,11 +73,13 @@ button {
 /*====================
     MAIN STYLES
   ====================*/
+/* slider */
 .container {
   width: 700px;
   height: 500px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   overflow: hidden;
+  line-height: 0;
   border: 5px solid var(--dark-color)
 }
 
@@ -91,6 +96,7 @@ button {
   width: 700px;
   height: 500px;
   padding: 20px;
+  line-height: 0;
 }
 
 .item-slider__title {
@@ -125,6 +131,47 @@ button {
 
 #itemFour {
   background-color: var(--blue-color);
+}
+
+/* slider dots */
+.dots {
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.dots__item:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.dots__button {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background-color: var(--grey-color);
+  border: 5px solid var(--dark-color);
+  border-radius: 50%;
+}
+
+.dots__button--active {
+  background-color: var(--dark-color);
+}
+
+.dots__button:focus {
+  outline: 5px solid var(--green-color);
+  outline-offset: -5px;
+}
+
+.dots__button:not(.dots__button--active):hover {
+  background-color: var(--orange-color);
+  outline: none;
+}
+
+.dots__button:not(.dots__button--active):active {
+  opacity: 0.3;
 }
 
 
