@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,47 +14,55 @@
   <link rel="manifest" href="manifest.webmanifest">
 
   <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="accent_color">
+  <meta name="theme-color" content="#a3ffa3">
   <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="accent_color">
+  <meta name="msapplication-navbutton-color" content="#a3ffa3">
   <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="accent_color">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#a3ffa3">
 
   <!-- styles and css libs -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-  <article class="slider">
-    <h1 class="visually-hidden">Dinosaurs</h1>
-    <section class="slider__item item-slider" id="itemOne">
-      <h2 class="item-slider__title">Tyrannosaurus</h2>
-      <p class="item-slider__img-wrapper">
-        <img class="item-slider__img" width="700" height="500" src="images/slider/tyrannosaurus.png" alt="Big Tyrannosaurus with stripes on his back is roaring at something.">
-      </p>
-    </section>
-    <section class="slider__item" id="itemTwo">
-      <h2 class="item-slider__title">Velociraptor</h2>
-      <p class="item-slider__img-wrapper">
-        <img class="item-slider__img" width="700" height="500" src="images/slider/velociraptor.png" alt="Dinosaur with dangerous big claws and long tail is standing on two legs and looking at something.">
-      </p>
-    </section>
-    <section class="slider__item" id="itemThree">
-      <h2 class="item-slider__title">Diplodocus</h2>
-      <p class="item-slider__img-wrapper">
-        <img class="item-slider__img" width="700" height="500" src="images/slider/diplodocus.png" alt="Gigantic herbivorous dinosaur with long neck and even more long whip-like tail.">
-      </p>
-    </section>
-    <section class="slider__item" id="itemFour">
-      <h2 class="item-slider__title">Pterodactyl</h2>
-      <p class="item-slider__img-wrapper">
-        <img class="item-slider__img" width="500" height="300" src="images/slider/pterodactyl.png" alt="Flying beige dinosaur with leather wings and long horn on his head.">
-      </p>
-    </section>
-  </article>
+  <div class="container">
+    <article class="slider">
+      <h1 class="visually-hidden">Dinosaurs</h1>
+      <section class="slider__item item-slider" id="itemOne">
+        <h2 class="item-slider__title">Tyrannosaurus</h2>
+        <p class="item-slider__img-wrapper">
+          <img class="item-slider__img" width="700" height="500" src="images/slider/tyrannosaurus.png"
+            alt="Big Tyrannosaurus with stripes on his back is roaring at something.">
+        </p>
+      </section>
+      <section class="slider__item" id="itemTwo">
+        <h2 class="item-slider__title">Velociraptor</h2>
+        <p class="item-slider__img-wrapper">
+          <img class="item-slider__img" width="700" height="500" src="images/slider/velociraptor.png"
+            alt="Dinosaur with dangerous big claws and long tail is standing on two legs and looking at something.">
+        </p>
+      </section>
+      <section class="slider__item" id="itemThree">
+        <h2 class="item-slider__title">Diplodocus</h2>
+        <p class="item-slider__img-wrapper">
+          <img class="item-slider__img" width="700" height="500" src="images/slider/diplodocus.png"
+            alt="Gigantic herbivorous dinosaur with long neck and even more long whip-like tail.">
+        </p>
+      </section>
+      <section class="slider__item" id="itemFour">
+        <h2 class="item-slider__title">Pterodactyl</h2>
+        <p class="item-slider__img-wrapper">
+          <img class="item-slider__img" width="500" height="300" src="images/slider/pterodactyl.png"
+            alt="Flying beige dinosaur with leather wings and long horn on his head.">
+        </p>
+      </section>
+    </article>
+  </div>
 
   <!-- scripts and js libs -->
   <script src="js/main.js"></script>
 </body>
+
 </html>
