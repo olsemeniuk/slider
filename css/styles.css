@@ -72,8 +72,9 @@ button {
   ====================*/
 .container {
   width: 700px;
+  height: 500px;
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow: hidden;
   border: 5px solid var(--dark-color)
 }
 
@@ -88,6 +89,7 @@ button {
   align-items: center;
   flex: 0 0 700px;
   width: 700px;
+  height: 500px;
   padding: 20px;
 }
 
